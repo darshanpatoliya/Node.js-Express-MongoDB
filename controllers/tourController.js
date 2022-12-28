@@ -30,9 +30,11 @@ exports.getTour = (req, res) => {
   // });
 };
 exports.createTour = (req, res) => {
+  //Another way to create or save a tour
   // const newTour = new Tour({})
   // newTour.Save()
-  res.status(201).json({
+
+  Tour.create().res.status(201).json({
     status: 'success',
     // data: {
     //   tour: newTour,
